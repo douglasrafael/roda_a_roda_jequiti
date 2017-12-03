@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="683.0" prefWidth="1080.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.uepb.roda_a_roda.controller.PrincipalController">
+    <stylesheets>
+        <URL value="@/br/edu/uepb/roda_a_roda/assets/css/principal.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="683.0" maxWidth="1080.0" minHeight="683.0" minWidth="1080.0" prefHeight="683.0" prefWidth="1080.0" stylesheets="@../assets/css/principal.css">
+         <children>
+            <ImageView fitHeight="683.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/background_tela_principal.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btHelp" layoutX="930.0" layoutY="35.0" minHeight="52.0" minWidth="50.0" mnemonicParsing="false" onAction="#action" styleClass="btHelp" />
+            <Button fx:id="btClose" layoutX="980.0" layoutY="35.0" minHeight="52.0" minWidth="50.0" mnemonicParsing="false" onAction="#action" styleClass="btClose" />
+            <Button fx:id="btVoltar" layoutX="879.0" layoutY="35.0" minHeight="52.0" minWidth="50.0" mnemonicParsing="false" onAction="#action" styleClass="btPrev" />
+            <ImageView fx:id="imgPainel" fitHeight="276.0" fitWidth="758.0" layoutX="34.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/painel_gif.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="181.0" fitWidth="191.0" layoutX="30.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/logo_tela_principal.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btResponder" alignment="CENTER" contentDisplay="CENTER" layoutX="890.0" layoutY="590.0" minHeight="36.0" minWidth="138.0" mnemonicParsing="false" onAction="#action" styleClass="btResponder" text="RESPONDER" />
+            <ImageView fx:id="imgRoda" fitHeight="325.0" fitWidth="324.0" layoutX="675.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/roleta.png" />
+               </image></ImageView>
+            <HBox layoutX="285.0" layoutY="35.0" prefHeight="90.0" prefWidth="458.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label fx:id="lbUsuario" styleClass="lbJogador" text="Jogador">
+                           <VBox.margin>
+                              <Insets left="8.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="BOTTOM_RIGHT" maxHeight="45.0" maxWidth="136.0" minHeight="45.0" minWidth="136.0" prefHeight="45.0" prefWidth="136.0">
+                           <children>
+                              <Label fx:id="lbPontuacaoUsuario" alignment="TOP_LEFT" styleClass="lbPontuacao" text="R$ 0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="89.0" prefWidth="144.0">
+                     <children>
+                        <Label fx:id="lbComputador" styleClass="lbJogador" text="Computador">
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="BOTTOM_RIGHT" maxHeight="45.0" maxWidth="140.0" minHeight="45.0" minWidth="142.0" prefHeight="45.0" prefWidth="140.0">
+                           <children>
+                              <Label fx:id="lbPontuacaoNPC" alignment="TOP_LEFT" styleClass="lbPontuacao" text="R$ 0" />
+                           </children>
+                           <padding>
+                              <Insets right="2.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label styleClass="lbTempo" text="TEMPO:">
+                           <VBox.margin>
+                              <Insets top="16.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lbTempo" styleClass="lbTempoNumb" text="00:30">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button fx:id="btRoda" layoutX="770.0" layoutY="362.0" minHeight="132.0" minWidth="134.0" mnemonicParsing="false" onAction="#action" styleClass="btRoda" />
+            <ImageView fitHeight="59.0" fitWidth="73.0" layoutX="803.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/ponteiro_roleta.png" />
+               </image>
+            </ImageView>
+            <VBox fx:id="vBoxTeclado" layoutX="48.0" layoutY="540.0" prefHeight="115.0" prefWidth="642.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="2.0">
+                     <children>
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="A" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="B" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="C" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="D" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="E" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="F" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="G" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="H" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="I" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="J" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="K" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="L" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="M" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="N" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="2.0">
+                     <children>
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="O" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="P" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="Q" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="R" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="S" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="T" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="U" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="V" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="W" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="X" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="Y" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="Z" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" onAction="#actionLetra" styleClass="btLetra" text="&lt;" />
+                        <Button minHeight="56.0" minWidth="46.0" mnemonicParsing="false" styleClass="btLetra" visible="false" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label fx:id="lbDica" alignment="CENTER" layoutX="210.0" layoutY="462.0" prefHeight="17.0" prefWidth="349.0" styleClass="lbDica" text="IRRESPONSÁVEL" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

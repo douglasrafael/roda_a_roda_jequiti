@@ -1,0 +1,35 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-radius: 90;
+    -fx-font-family: "Arial", Helvetica, sans-serif;
+}
+
+.lblPrimario {
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: #89c6d9;    
+    -fx-font-size: 14px;
+}
+
+.lblSecundario {
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: #89c6d9;    
+    -fx-font-size: 12px;
+}
+
+.btClose {
+    -fx-background-image: url('../images/bt_close.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+
+}
+
+.btClose:focused, .btClose:hover {
+    -fx-background-image: url('../images/bt_close_focus.png');
+}

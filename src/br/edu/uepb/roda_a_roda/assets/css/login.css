@@ -1,0 +1,106 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-radius: 90;
+    -fx-font-family: "Arial", Helvetica, sans-serif;
+}
+
+.label {
+    -fx-text-fill: #f8f8f8;
+}
+
+.text-field {
+    -fx-font-size: 13;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 6 10 4 10;
+    -fx-pref-tile-height: 50;
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+/* Botão verde */
+.btActionLogin {
+    -fx-background-color:
+        linear-gradient(#90c618, #8cc70f),
+        linear-gradient(#7ebe03, #79b701),
+        linear-gradient(#89d001, #7cc701),
+        linear-gradient(#96ff57 0%, #3eb819 50%, #3ab714 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 25;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-font-weight: bold;
+    -fx-font-size: 28px;
+    -fx-text-fill: #f8f8f8;
+    -fx-border-width: 2;
+    -fx-border-color: #baf0d1;
+    -fx-border-radius: 25;
+    -fx-cursor: hand;
+}
+
+/* Botão verde */
+.btActionLogin:focused, .btActionLogin:hover {
+    -fx-background-color:
+        linear-gradient(#74a703, #78af02),
+        linear-gradient(#6ea700, #6ba202),
+        linear-gradient(#89d001, #7cc701),
+        linear-gradient(#67e21d 0%, #32b00c 50%, #2ca208 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-border-color: #89cba5;
+}
+
+/* Botão laranja */
+.btNovoCadatro {
+    -fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 15;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-width: 2;
+    -fx-border-color: #ffdea1;
+    -fx-border-radius: 15;
+    -fx-cursor: hand;
+}
+
+/* Botão laranja */
+.btNovoCadatro:focused, .btNovoCadatro:hover {
+    -fx-background-color: 
+        linear-gradient(#f9c835, #ca7503),
+        linear-gradient(#f8e358, #ebae2e),
+        linear-gradient(#f8de3d, #d28d06),
+        linear-gradient(#f8db35 0%, #e7b607 50%, #e1990b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-border-color: #f6cb7c;
+}
+
+/* Botão close laranja/vermelho */
+.btClose {
+    -fx-background-image: url('../images/bt_close.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.btClose:focused, .btClose:hover {
+    -fx-background-image: url('../images/bt_close_focus.png');
+}
+
+/* Botão de voltar na tela de cadastro */
+.btPrev{
+    -fx-background-image: url('../images/bt_prev.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.btPrev:focused, .btPrev:hover{
+    -fx-background-image: url('../images/bt_prev_focus.png');
+}
+
